@@ -2,6 +2,7 @@ package com.example.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -14,7 +15,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         findingViews();
 
-
+        signup_btn.setOnClickListener(view->{
+            Intent intent = new Intent(this, Signup.class);
+            startActivity(intent);
+        });
 
         
     }
