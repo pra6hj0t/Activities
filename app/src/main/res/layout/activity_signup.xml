@@ -49,7 +49,7 @@
             android:layout_marginTop="10dp"
             android:text="Register"
             android:textColor="#ad168d"
-            android:textSize="40sp"
+            android:textSize="35sp"
             android:textStyle="bold" />
 
         <TextView
@@ -68,6 +68,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_edittext"
             android:ems="10"
+            android:hint="Enter your Email"
             android:inputType="textEmailAddress" />
 
         <TextView
@@ -86,6 +87,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_edittext"
             android:ems="10"
+            android:hint="Enter your Password"
             android:inputType="textPassword" />
 
         <TextView
@@ -104,6 +106,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_edittext"
             android:ems="10"
+            android:hint="Confirm your Password"
             android:inputType="textPassword" />
 
         <android.widget.Button
@@ -120,11 +123,11 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="Do you have an account? Sign in"
             android:textColor="#ad168d"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>
