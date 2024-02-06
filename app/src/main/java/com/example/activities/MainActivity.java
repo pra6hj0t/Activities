@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.activities.data.User;
+
 public class MainActivity extends AppCompatActivity {
     Button signup_btn,login_btn,dashboard_btn,about_btn;
 
@@ -32,13 +34,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this, Dashboard.class);
+                String a = "This is dashboard Activity";
+                intent.putExtra("about_dash",a);
                 startActivity(intent);
             }
         });
         about_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                User user = new User("Prabh","prabh@gmail.com");
                 Intent intent = new Intent(MainActivity.this, About.class);
+                String a = "This is About Activity";
+                intent.putExtra("about_abt",a);
+                intent.putExtra("user",user);
                 startActivity(intent);
             }
         });
