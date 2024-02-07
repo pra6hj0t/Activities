@@ -43,9 +43,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                User user = new User("Prabh","prabh@gmail.com");
+
                 Intent intent = new Intent(MainActivity.this, About.class);
                 String a = "This is About Activity";
+                User user = new User("Prabh","prabh@gmail.com");
+
                 intent.putExtra("about_abt",a);
                 intent.putExtra("user",user);
                 startActivity(intent);
